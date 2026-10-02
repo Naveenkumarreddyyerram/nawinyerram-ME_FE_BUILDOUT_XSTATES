@@ -1,0 +1,9 @@
+{
+    "Test Case 1: CitySelector Component Tests - Initial Render and Dropdown Presence Tests - renders all dropdowns correctly": "TEST_STATUS_FAILURE",
+    "Test Case 2: CitySelector Component Tests - Dropdown Population Tests - populates country dropdown with data from API": "TEST_STATUS_SKIPPED",
+    "Test Case 3: CitySelector Component Tests - Dropdown Population Tests - populates state dropdown when a country (India) is selected": "TEST_STATUS_SKIPPED",
+    "Test Case 4: CitySelector Component Tests - Dropdown Population Tests - populates city dropdown when a state (Goa) is selected": "TEST_STATUS_SKIPPED",
+    "Test Case 5: CitySelector Component Tests - Location Selection and Display Tests - displays the selected location correctly": "TEST_STATUS_SKIPPED",
+    "Test Case 6: CitySelector Component Tests - API Error Handling Tests - handles country API error gracefully": "TEST_STATUS_SKIPPED",
+    "Test Case 7: CitySelector Component Tests - API Error Handling Tests - handles state API error gracefully when India is selected": "TEST_STATUS_SKIPPED"
+}
