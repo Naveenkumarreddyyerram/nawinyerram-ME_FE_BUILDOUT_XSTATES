@@ -81,55 +81,57 @@ function App() {
   return (
     <div className="app">
       <div className="location-selector">
-        <h1>Location Selector</h1>
+        <h1>Select Location</h1>
 
-        <select
-          value={selectedCountry}
-          onChange={handleCountryChange}
-        >
-          <option value="">Select Country</option>
+        <div className="dropdown-group">
+            <select
+            value={selectedCountry}
+            onChange={handleCountryChange}
+            >
+            <option value="">Select Country</option>
 
-          {countries.map((country) => (
-            <option key={country} value={country}>
-              {country}
-            </option>
-          ))}
-        </select>
+            {countries.map((country) => (
+                <option key={country} value={country}>
+                {country}
+                </option>
+            ))}
+            </select>
 
-        <select
-          value={selectedState}
-          onChange={handleStateChange}
-          disabled={!selectedCountry}
-        >
-          <option value="">Select State</option>
+            <select
+            value={selectedState}
+            onChange={handleStateChange}
+            disabled={!selectedCountry}
+            >
+            <option value="">Select State</option>
 
-          {states.map((state) => (
-            <option key={state} value={state}>
-              {state}
-            </option>
-          ))}
-        </select>
+            {states.map((state) => (
+                <option key={state} value={state}>
+                {state}
+                </option>
+            ))}
+            </select>
 
-        <select
-          value={selectedCity}
-          onChange={handleCityChange}
-          disabled={!selectedState}
-        >
-          <option value="">Select City</option>
+            <select
+            value={selectedCity}
+            onChange={handleCityChange}
+            disabled={!selectedState}
+            >
+            <option value="">Select City</option>
 
-          {cities.map((city) => (
-            <option key={city} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
+            {cities.map((city) => (
+                <option key={city} value={city}>
+                {city}
+                </option>
+            ))}
+            </select>
 
-        {selectedCity && (
-          <p>
-            You selected {selectedCity}, {selectedState},{" "}
-            {selectedCountry}
-          </p>
-        )}
+            {selectedCity && (
+            <p>
+                You selected {selectedCity}, {selectedState},{" "}
+                {selectedCountry}
+            </p>
+            )}
+        </div>
       </div>
     </div>
   );
